@@ -3,8 +3,8 @@ var app = express();
 
 
 app.get('/', (request, response) => {
-  response.send('Hello Express');
-  response.end();
+  const page = `${__dirname}/views/index.html`;
+  response.sendFile(page);
 })
 
 
