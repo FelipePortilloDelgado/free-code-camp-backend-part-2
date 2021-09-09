@@ -13,7 +13,7 @@ app.get('/', (request, response) => {
 
 app.get('/json', (request, response) => {
   const msgHello = 'Hello json';
-  const message = process.env.MESSAGE_STYLE === 'uppercase' ? msgHello.toUpperCase() : msgHello.toLocaleLowerCase();
+  const message = process.env.MESSAGE_STYLE === 'uppercase' ? msgHello.toUpperCase() : msgHello;
   response.json({ message });
 })
 
