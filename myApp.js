@@ -10,38 +10,9 @@ app.get('/', (request, response) => {
 })
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+app.get('/json', (request, response) => {
+  response.json({"message": "Hello json"});
+})
 
 
  module.exports = app;
